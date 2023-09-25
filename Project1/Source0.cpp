@@ -9,8 +9,9 @@ enum Month { Январь = 1, Февраль, Март, Апрель, Май, Июнь, Июль,
 int main() {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
-	Month mon; 
-	int num;
+	Month mon = Январь; 
+	int num = mon;
+
 	do
 	{
 		std::cout << "Введите номер месяца: ";
@@ -19,91 +20,49 @@ int main() {
 		switch (num)
 		{
 		case 0:
-			std::cout << "До свидания." ;
+			std::cout << "До свидания.";
 			exit(0);
-		case 1:
-			mon = Январь;
+		case (Январь):
+			std::cout << "Январь" << "\n";
 			break;
-		case 2:
-			mon = Февраль;
+		case (Февраль):
+			std::cout << "Февраль" << "\n";
 			break;
-		case 3:
-			mon = Март;
+		case (Март):
+			std::cout << "Март" << "\n";
 			break;
-		case 4:
-			mon = Апрель;
+		case (Апрель):
+			std::cout << "Апрель" << "\n";
 			break;
-		case 5:
-			mon = Май;
+		case (Май):
+			std::cout << "Май" << "\n";
 			break;
-		case 6:
-			mon = Июнь;
+		case (Июнь):
+			std::cout << "Июнь" << "\n";;
 			break;
-		case 7:
-			mon = Июль;
+		case (Июль):
+			std::cout << "Июль" << "\n";
 			break;
-		case 8:
-			mon = Август;
+		case (Август):
+			std::cout << "Август" << "\n";
 			break;
-		case 9:
-			mon = Сентябрь;
+		case (Сентябрь):
+			std::cout << "Сентябрь" << "\n";
 			break;
-		case 10:
-			mon = Октябрь;
+		case (Октябрь):
+			std::cout << "Октябрь" << "\n";
 			break;
-		case 11:
-			mon = Ноябрь;
+		case (Ноябрь):
+			std::cout << "Ноябрь" << "\n";
 			break;
-		case 12:
-			mon = Декабрь;
+		case (Декабрь):
+			std::cout << "Декабрь" << "\n";
 			break;
 		default:
 			std::cout << "Неправильный номер!" << "\n";
 			break;
 		}
-		switch (mon)
-		{
-		case Январь:
-			std::cout << "Январь" << "\n";
-			break;
-		case Февраль:
-			std::cout << "Февраль" << "\n";
-			break;
-		case Март:
-			std::cout << "Март" << "\n";
-			break;
-		case Апрель:
-			std::cout << "Апрель" << "\n";
-			break;
-		case Май:
-			std::cout << "Май" << "\n";
-			break;
-		case Июнь:
-			std::cout << "Июнь" << "\n";
-			break;
-		case Июль:
-			std::cout << "Июль" << "\n";
-			break;
-		case Август:
-			std::cout << "Август" << "\n";
-			break;
-		case Сентябрь:
-			std::cout << "Сентябрь" << "\n";
-			break;
-		case Октябрь:
-			std::cout << "Октябрь" << "\n";
-			break;
-		case Ноябрь:
-			std::cout << "Ноябрь" << "\n";
-			break;
-		case Декабрь:
-			std::cout << "Декабрь" << "\n";
-			break;
-		default:
-			
-			break;
-		}
-	} 
+	}
 	while (num != 0);
 	{
 		
